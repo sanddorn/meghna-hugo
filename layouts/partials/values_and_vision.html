@@ -1,9 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 {{ if $data.values_and_vision.values_and_vision.enable }}
-{{ print "bar" }}
 {{ with $data.values_and_vision.values_and_vision }}
-{{ print "foo"}}
 {{"<!-- values -->" | safeHTML }}
 <section id="values-and-vision" class="bg-one section">
 	<div class="container">

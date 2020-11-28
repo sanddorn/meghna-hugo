@@ -871,99 +871,6 @@ a:hover {
 }
 
 /*=================================================================
-  Portfolio section
-==================================================================*/
-.portfolio-filter {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.portfolio-filter .btn {
-  outline: 0;
-  border: 1px solid rgba(236, 239, 241, 0.07);
-  background: transparent;
-  display: inline-block;
-  font-size: 16px;
-  padding: 6px 20px;
-  font-weight: 700;
-  color: #737f8a;
-  transition: .3s all;
-}
-
-.portfolio-filter .btn.active {
-  border-color: #57cbcc;
-}
-
-.portfolio-block {
-  position: relative;
-}
-
-.portfolio-block:before {
-  transition: all 0.3s ease-in-out;
-  background: white;
-  opacity: 0;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  position: absolute;
-  content: '';
-}
-
-.portfolio-block img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-block:hover:before {
-  opacity: 1;
-}
-
-.portfolio-block:hover .caption h4 {
-  top: 45%;
-}
-
-.portfolio-block:hover .caption {
-  opacity: 1;
-  top: 55%;
-}
-
-.portfolio-block .caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  transition: all 0.2s ease-in-out;
-  text-align: center;
-}
-
-.portfolio-block .caption h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.portfolio-block .caption h4 a {
-  color: #555;
-}
-
-.portfolio-block .caption .search-icon {
-  background: #57cbcc;
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 30px;
-}
-
-.portfolio-block .caption .search-icon i {
-  line-height: 50px;
-}
-
-/*=================================================================
   Services section
 ==================================================================*/
 .service-block {
@@ -1011,6 +918,28 @@ a:hover {
   font-size: 50px;
 }
 
+/*=================================================================
+  portfoliosection
+==================================================================*/
+.portfolio-block {
+  padding: 60px 20px;
+  border-left: 1px solid rgba(236, 239, 241, 0.07);
+  border-top: 1px solid rgba(236, 239, 241, 0.07);
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(150, 180, 255, 0.7);
+}
+
+.portfolio-block .portfolio-icon {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+/* Equal Size boxes */
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
 
 /*=================================================================
   Services section 2
